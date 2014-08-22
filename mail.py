@@ -1,9 +1,9 @@
 import smtplib  
 from email.mime.text import MIMEText  
-mailto_list=["kangwenyi@imfclub.com"] 
+mailto_list=["xxxxx"] 
 mail_host="smtp.qq.com"
-mail_user="296853913" 
-mail_pass="13546252421"
+mail_user="xxxxxx" 
+mail_pass="xxxxx"
 mail_postfix="qq.com"
   
 def send_mail(to_list,sub,content):
@@ -22,8 +22,7 @@ def send_mail(to_list,sub,content):
     except Exception, e:  
         print str(e)  
         return False  
+        
 if __name__ == '__main__':  
-    if send_mail(mailto_list,"296853913@qq.com","aaaaaaaaaaaa"):  
-        print 'OK'
-    else:  
-        print 'fullb'
+   send_mail(mailto_list,"xxxxx","test"):  
+    
